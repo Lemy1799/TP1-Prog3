@@ -13,6 +13,7 @@ const outputFile = '../../swagger-output.json';
 const routes = [
   
 
+  "src/modules/task/task.routes.js",
   "src/modules/user/user.routes.js",
 ];
 
