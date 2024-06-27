@@ -33,7 +33,7 @@ app.use(bodyParser.urlencoded({
 
 mongoose.connect(
   process.env.DB_RECLAMO, { useNewUrlParser: true, useUnifiedTopology: true }
-);
+).then(() => console.log('Conectado a MongoDB')).catch(err => console.error('No se pudo conectar a MongoDB', err)); 
 
 app.get("/", async (request, response) => {
       return response.send("Beckend reclamos node js express");

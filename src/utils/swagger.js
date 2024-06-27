@@ -3,18 +3,19 @@ require('dotenv').config()
 const doc = {
   
   info: {
-    title: 'PIII- test',
+    title: 'PIII - TP1',
     description: 'Aplicacion inicial de backend',
   },
-   host: 'localhost:'+process.env.PORT
+   host: 'localhost:3000'
 };
 
 const outputFile = '../../swagger-output.json';
 const routes = [
   
 
-  "src/modules/task/task.routes.js",
-  "src/modules/user/user.routes.js",
+  
+  "../modules/user/user.routes.js",
+  "../modules/task/task.routes.js"
 ];
 
 swaggerAutogen(outputFile, routes, doc);
