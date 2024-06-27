@@ -36,7 +36,7 @@ mongoose.connect(
 ).then(() => console.log('Conectado a MongoDB')).catch(err => console.error('No se pudo conectar a MongoDB', err)); 
 
 app.get("/", async (request, response) => {
-      return response.send("Beckend reclamos node js express");
+      return response.send("Backend reclamos node js express");
 });
 // Routers
 app.use(taskRouter);
